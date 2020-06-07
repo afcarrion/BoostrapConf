@@ -10,29 +10,29 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Conferencia Hawaii!</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57">
     <!-- header -->
     <header>
-        <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">CarriCas</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
               
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbar">
                   <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">La conferencia</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#main">La conferencia</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Oradores</a>
+                      <a class="nav-link" href="#speakers">Oradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Lugar y fecha</a>
+                        <a class="nav-link" href="#place-time">Lugar y fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Convierte en orador</a>
+                        <a class="nav-link" href="#form-orador">Convierte en orador</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-carricas" href="#">Tickets</a>
@@ -46,7 +46,7 @@
     </header>
     <!-- End Header -->
     <!-- Main -->
-    <section class="main">
+    <section class="main" id="main">
         <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -75,7 +75,7 @@
     </section>
     <!-- End Main -->
     <!-- Speakers -->
-    <section class="speakers mt-4">
+    <section class="speakers mt-4" id="speakers">
         <div class="container">
             <div class="row">
                 <div class="col text-center text-uppercase">
@@ -141,7 +141,7 @@
     </section>
     <!-- End Speakers -->
     <!-- Lugar y fecha -->
-    <section class="place-time">
+    <section class="place-time" id="place-time">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-6 pl-0 pr-0">
@@ -149,7 +149,7 @@
                 </div>
                 <div class="col-12 col-lg-6 pt-4 pb-4">
                     <h2>Honolulu  - Oct 2030</h2>
-                    <p>Honolulu, en la costa sur de la isla de Oahu, es la capital de Hawái y la vía de acceso a la cadena de islas de EE.UU. El barrio de Waikiki es un centro de restaurantes, vida nocturna y comercio, famoso por su icónica playa con forma de medialuna bordeada de palmeras y hoteles de muchos pisos y con el cráter volcánico Diamond Head en lo alto a la distancia. Los sitios relacionados con el ataque a Pearl Harbor en la Segunda Guerra Mundial incluyen el USS Arizona Memorial.</p>
+                    <p>Honolulu, en la costa sur de la isla de Oahu, es la capital de Hawái y la vía de acceso a la cadena de islas de EE.UU. El barrio de Waikiki es un centro de restaurantes, vida nocturna y comercio, famoso por su icónica playa con forma de medialuna bordeada de palmeras y hoteles de muchos pisos y con el cráter volcánico Diamond Head en lo alto a la distancia. Los sitios relacionados con el ataque a Pearl Harbor en la Segunda Guerra Mundial incluyen el  <abbr data-toggle="tooltip" title="Monumento en memoria de las victimas">USS Arizona Memorial.</abbr>  </p>
                     <a href="#" class="btn btn-outline-light">Conoce mas</a>
                 </div>
             </div>
@@ -157,7 +157,7 @@
     </section>
     <!-- End Lugar y fecha -->
     <!-- Form speaker  -->
-    <section class="form-orador pt-4 pb-2">
+    <section class="form-orador pt-4 pb-2" id="form-orador">
         <div class="container">
             <div class="row">
                 <div class="col text-uppercase text-center">
@@ -167,7 +167,7 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    Anotate como Orador para dar una charla ignite. Cúentanos de que quieres hablar!
+                    Anotate como Orador para dar una  <abbr data-toggle="tooltip" title="Charlas de 5 minutos">charla ignite.</abbr>  Cúentanos de que quieres hablar!
                 </div>
             </div>
             <div class="row">
@@ -231,5 +231,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
